@@ -7,7 +7,7 @@
 - gitrepo aangemaakt
 
 #### May 31
--  
+- maximale grootte van de openlist aangepast van 200 naar 300, lijkt bug te voorkomen bij het remaken (hill climbing) van de path
 
 #### June 1
 Werkafspraken week #1
@@ -17,7 +17,7 @@ Werkafspraken week #1
 * Stap 3: we gaan je applicatie testen met een testset van een circuit board met een aantal random gegenereerde netlists met voorzichtig oplopende aantallen nets in de list.
 * Stap 4: je synct met Martijn en Wouter of het project voldoet aan het programmeerproject.
 
-- visualisatie verbeteren
+visualisatie verbeteren
 
 #### June 2
  
