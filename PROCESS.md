@@ -7,9 +7,17 @@
 - gitrepo aangemaakt
 
 #### May 31
- 
+-  
+
 #### June 1
-- design document deadline
+Werkafspraken week #1
+
+* Stap 1: werkende applicatie maken die circuit boards + netlists als input neemt, en als output een oplossing geeft OF "er is geen oplossing binnen x tijd gevonden"(plus de benodigde rekentijd (stappen en kloktijd)).
+* Stap 2: je applicatie *visualiseert* de oplossing
+* Stap 3: we gaan je applicatie testen met een testset van een circuit board met een aantal random gegenereerde netlists met voorzichtig oplopende aantallen nets in de list.
+* Stap 4: je synct met Martijn en Wouter of het project voldoet aan het programmeerproject.
+
+- visualisatie verbeteren
 
 #### June 2
  
