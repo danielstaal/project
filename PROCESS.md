@@ -20,7 +20,7 @@ Werkafspraken week #1
 visualisatie verbeteren
 
 #### June 2
- 
+- werken aan GUI met gebruik van Tkinter Canvas widget
 #### June 3
  
 
