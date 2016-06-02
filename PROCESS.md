@@ -23,6 +23,7 @@ visualisatie verbeteren
 - werken aan GUI met gebruik van Tkinter Canvas widget
 ![](https://github.com/danielstaal/project/blob/master/doc/gui.PNG?raw=true)
 - proberen de visualisatie in Tkinter te embedden
+- wellicht beter alleen een grafiek in tkinter te embedden en de figuur los te houden
 
 #### June 3
  
