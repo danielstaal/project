@@ -22,6 +22,7 @@ visualisatie verbeteren
 #### June 2
 - werken aan GUI met gebruik van Tkinter Canvas widget
 ![](https://github.com/danielstaal/project/blob/master/doc/gui.PNG?raw=true)
+
 #### June 3
  
 
