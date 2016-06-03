@@ -21,13 +21,13 @@ visualisatie verbeteren
 
 #### June 2
 - werken aan GUI met gebruik van Tkinter Canvas widget
-- <img src="https://github.com/danielstaal/project/blob/master/doc/gui.PNG?raw=true" width="480">
+<img src="https://github.com/danielstaal/project/blob/master/doc/gui.PNG?raw=true" width="480">
 - proberen de visualisatie in Tkinter te embedden
 - wellicht beter alleen een grafiek in tkinter te embedden en de figuur los te houden
 
 #### June 3
 - verder aan applicatie gewerkt:
-- <img src="https://github.com/danielstaal/project/blob/master/doc/gui2.PNG?raw=true" width="480">
+<img src="https://github.com/danielstaal/project/blob/master/doc/gui2.PNG?raw=true" width="480">
 
 ## Week 23
 #### June 4
