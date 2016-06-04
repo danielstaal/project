@@ -32,6 +32,7 @@ visualisatie verbeteren
 ## Week 23
 #### June 4
 <img src="https://github.com/danielstaal/project/blob/master/doc/gui3.PNG?raw=true" width="480">
+- code design verbeteren
 
 #### June 5
  
