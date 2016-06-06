@@ -35,7 +35,10 @@ visualisatie verbeteren
 - code design verbeteren
 - nu mogelijk om random netlists te genereren
 - kijken waar het pad meestal geblokkeerd wordt
- - lijkt erop dat alle blokkades bij de gate plaatsvinden
+
+- fout ontdekt: er wordt nu gecheckt hoe groot de openList is om te kijken of de blokkade aan de andere kant zit. Dit moet de closedList zijn.
+ - maar: bij welke grootte moet aan de andere kant een pad verwijderd worden?
+
 
 #### June 5
  
