@@ -46,6 +46,7 @@ visualisatie verbeteren
 
 tijd: 195.9 sec
 totale lengte: 1060
+- blijft nu nieuwe oplossingen vinden voor netlist 3
 
 
 #### June 5
