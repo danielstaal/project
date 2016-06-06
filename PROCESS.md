@@ -49,6 +49,8 @@ totale lengte: 1060
 - blijft nu nieuwe oplossingen vinden voor netlist 3
 - met shortfirst en remaking een totale lengte van 981
 
+- random netlist zorgt nu ervoor dat meer dan 5 connecties bij 1 gate niet voorkomt
+
 #### June 5
  
 #### June 6
