@@ -34,6 +34,7 @@ visualisatie verbeteren
 <img src="https://github.com/danielstaal/project/blob/master/doc/gui3.PNG?raw=true" width="480">
 - code design verbeteren
 - nu mogelijk om random netlists te genereren
+- kijken waar het pad meestal geblokkeerd wordt
 
 #### June 5
  
