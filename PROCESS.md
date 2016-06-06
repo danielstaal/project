@@ -39,6 +39,7 @@ visualisatie verbeteren
 - fout ontdekt: er wordt nu gecheckt hoe groot de openList is om te kijken of de blokkade aan de andere kant zit. Dit moet de closedList zijn.
  - maar: bij welke grootte moet aan de andere kant een pad verwijderd worden?
 
+- met regelmaat ook niet direct bij de gate geblokkeerd
 
 #### June 5
  
