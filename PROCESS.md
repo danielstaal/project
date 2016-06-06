@@ -35,6 +35,7 @@ visualisatie verbeteren
 - code design verbeteren
 - nu mogelijk om random netlists te genereren
 - kijken waar het pad meestal geblokkeerd wordt
+ - lijkt erop dat alle blokkades bij de gate plaatsvinden
 
 #### June 5
  
