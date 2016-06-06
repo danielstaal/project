@@ -50,6 +50,7 @@ totale lengte: 1060
 - met shortfirst en remaking een totale lengte van 981
 
 - random netlist zorgt nu ervoor dat meer dan 5 connecties bij 1 gate niet voorkomt
+- hoe weet ik zeker of een netlist niet oplosbaar is?
 
 #### June 5
  
