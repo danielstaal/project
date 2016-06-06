@@ -41,6 +41,13 @@ visualisatie verbeteren
 
 - met regelmaat ook niet direct bij de gate geblokkeerd
 
+- netlist 3 opgelost!:
+<img src="https://github.com/danielstaal/project/blob/master/doc/sol50.PNG?raw=true" width="320">
+
+tijd: 195.9 sec
+totale lengte: 1060
+
+
 #### June 5
  
 #### June 6
