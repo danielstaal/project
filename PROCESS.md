@@ -47,7 +47,7 @@ visualisatie verbeteren
 tijd: 195.9 sec
 totale lengte: 1060
 - blijft nu nieuwe oplossingen vinden voor netlist 3
-
+- met shortfirst en remaking een totale lengte van 981
 
 #### June 5
  
