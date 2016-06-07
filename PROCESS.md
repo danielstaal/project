@@ -53,6 +53,8 @@ totale lengte: 1060
 - hoe weet ik zeker of een netlist niet oplosbaar is?
 
 #### June 5
+- visualisatie verbeteren
+ 
  
 #### June 6
  
