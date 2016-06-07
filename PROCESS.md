@@ -53,14 +53,14 @@ totale lengte: 1060
 - hoe weet ik zeker of een netlist niet oplosbaar is?
 Daanupdates:
 visualisatie verbeteren
-	- range bepaalde punten laten zien binnen een zekere lengte met twee sc huifjes. Net als op marktplaats, prijs van ... tot
+- range bepaalde punten laten zien binnen een zekere lengte met twee sc huifjes. Net als op marktplaats, prijs van ... tot
 - weg met die  bolletjes, allen duidelijke lijnen (kijk even naar de kleurstelling (meest onderscheidend)
 - Gates zelf: zwarte blokjes
 
 Results:
 - die netlists van verschillende aantallen, van ieder aantal 20 random maken.
 - oplosbaarheid, lengte, manhattanlengte. PLotten maarrrrrrrrrrrr. Dan gaan we leuk kijken!
-- 
+
 #### June 5
 
 
