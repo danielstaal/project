@@ -51,8 +51,19 @@ totale lengte: 1060
 
 - random netlist zorgt nu ervoor dat meer dan 5 connecties bij 1 gate niet voorkomt
 - hoe weet ik zeker of een netlist niet oplosbaar is?
+Daanupdates:
+visualisatie verbeteren
+	- range bepaalde punten laten zien binnen een zekere lengte met twee sc huifjes. Net als op marktplaats, prijs van ... tot
+- weg met die  bolletjes, allen duidelijke lijnen (kijk even naar de kleurstelling (meest onderscheidend)
+- Gates zelf: zwarte blokjes
 
+Results:
+- die netlists van verschillende aantallen, van ieder aantal 20 random maken.
+- oplosbaarheid, lengte, manhattanlengte. PLotten maarrrrrrrrrrrr. Dan gaan we leuk kijken!
+- 
 #### June 5
+
+
 - visualisatie verbeteren
  
  
