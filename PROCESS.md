@@ -65,7 +65,7 @@ Results:
 #### June 5
 - visualisatie verbeteren
 - er kunnen nu paden tussen bepaalde lengte worden laten zien
-- morgen: werken aan resultaten en verbeteren visualisatie
+- morgen: werken aan resultaten en verbeteren visualisatie (absolute positie van de grafiek van connecties)
  
  
 #### June 6
