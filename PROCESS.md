@@ -63,9 +63,8 @@ Results:
 - oplosbaarheid, lengte, manhattanlengte. PLotten maarrrrrrrrrrrr. Dan gaan we leuk kijken!
 
 #### June 5
-
-
 - visualisatie verbeteren
+- er kunnen nu paden tussen bepaalde lengte worden laten zien
  
  
 #### June 6
