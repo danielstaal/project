@@ -30,7 +30,7 @@ visualisatie verbeteren
 <img src="https://github.com/danielstaal/project/blob/master/doc/gui2.PNG?raw=true" width="480">
 
 ## Week 23
-#### June 4
+#### June 6
 <img src="https://github.com/danielstaal/project/blob/master/doc/gui3.PNG?raw=true" width="480">
 - code design verbeteren
 - nu mogelijk om random netlists te genereren
@@ -62,31 +62,21 @@ Results:
 - die netlists van verschillende aantallen, van ieder aantal 20 random maken.
 - oplosbaarheid, lengte, manhattanlengte. PLotten maarrrrrrrrrrrr. Dan gaan we leuk kijken!
 
-#### June 5
+#### June 7
 - visualisatie verbeteren
 - er kunnen nu paden tussen bepaalde lengte worden laten zien
 - morgen: werken aan resultaten en verbeteren visualisatie (absolute positie van de grafiek van connecties)
  
- 
-#### June 6
- 
-#### June 7
- 
 #### June 8
+- kleine bug in code gefixt: niet meer door ongebruikte gates heen
  
-## Week 24
 #### June 9
  
 #### June 10
  
-#### June 11
- 
-#### June 12
- 
+## Week 24
 #### June 13
  
-
-## Week 25
 #### June 14
  
 #### June 15
@@ -94,6 +84,16 @@ Results:
 #### June 16
  
 #### June 17
+ 
 
-#### June 18
+## Week 25
+#### June 20
+ 
+#### June 21
+ 
+#### June 22
+ 
+#### June 23
+
+#### June 24
  
