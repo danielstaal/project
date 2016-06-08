@@ -69,6 +69,12 @@ Results:
  
 #### June 8
 - kleine bug in code gefixt: niet meer door ongebruikte gates heen
+- er kunnen slechts paden van bepaalde lengte worden geshowd
+- er kan data uit de database folder worden opgehaald
+- applicatie opgesplitst in een losse solver en de GUI
+- morgen: database gaan vullen, resultaten beter visualiseren:
+ - van elke x aantal iteraties van elk aantal random connecties de gemiddelde totale lengte en tijd plotten
+ - op een schaal van rood naar groen de successrate van het oplossen van een aantal random connecties
  
 #### June 9
  
