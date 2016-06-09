@@ -78,7 +78,11 @@ Results:
  
 #### June 9
 visualisatie gaat vooruit:
-<img src="https://github.com/danielstaal/project/blob/master/doc/gui4.PNG?raw=true" width="240">
+<img src="https://github.com/danielstaal/project/blob/master/doc/gui4.PNG?raw=true" width="320">
+
+- de applicatie is geen solver meer, haalt alleen data uit de database
+- eerste iteratie wordt getoond op aanvraag van de user
+- grafiek laat gemiddelde resultaten van 10 gepoogde iteratie per aantal connecties zien
 
 
 #### June 10
