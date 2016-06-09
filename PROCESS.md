@@ -77,7 +77,10 @@ Results:
  - op een schaal van rood naar groen de successrate van het oplossen van een aantal random connecties
  
 #### June 9
- 
+visualisatie gaat vooruit:
+<img src="https://github.com/danielstaal/project/blob/master/doc/gui4.PNG?raw=true" width="480">
+
+
 #### June 10
  
 ## Week 24
