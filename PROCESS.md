@@ -83,6 +83,7 @@ visualisatie gaat vooruit:
 - de applicatie is geen solver meer, haalt alleen data uit de database
 - eerste iteratie wordt getoond op aanvraag van de user
 - grafiek laat gemiddelde resultaten van 10 gepoogde iteratie per aantal connecties zien
+- netlists waarbij een of meer gates meer dan 5 verbindingen maakt worden weggegooid zonder mee te tellen
 
 
 #### June 10
