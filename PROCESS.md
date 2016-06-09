@@ -78,7 +78,7 @@ Results:
  
 #### June 9
 visualisatie gaat vooruit:
-<img src="https://github.com/danielstaal/project/blob/master/doc/gui4.PNG?raw=true" width="480">
+<img src="https://github.com/danielstaal/project/blob/master/doc/gui4.PNG?raw=true" width="240">
 
 
 #### June 10
