@@ -52,7 +52,7 @@ totale lengte: 1060
 - random netlist zorgt nu ervoor dat meer dan 5 connecties bij 1 gate niet voorkomt
 - hoe weet ik zeker of een netlist niet oplosbaar is?
 
-#### Daanupdates:
+##### Daanupdates:
 visualisatie verbeteren
 - range bepaalde punten laten zien binnen een zekere lengte met twee sc huifjes. Net als op marktplaats, prijs van ... tot
 - weg met die  bolletjes, allen duidelijke lijnen (kijk even naar de kleurstelling (meest onderscheidend)
@@ -90,6 +90,17 @@ visualisatie gaat vooruit:
  
 ## Week 24
 #### June 13
+
+##### Daanupdates:
+* pre: zien van de spreiding van de 10 trials.
+* pre: gaan naar 20 trials
+* punten verbinden
+* Huidige resultaten uitbreiden naar 3 prints van het huidige formaat (poortjes verschuiven)
+* Huidige resultaten uitbreiden naar 3 grote prints (het origineel) 
+
+*  Doe een voorstel voor makkelijke en moeilijke netlists.
+
+* Met Julian kijken of we die dingen kunnen 3D printen
  
 #### June 14
  
