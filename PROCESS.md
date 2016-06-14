@@ -85,7 +85,6 @@ visualisatie gaat vooruit:
 - grafiek laat gemiddelde resultaten van 10 gepoogde iteratie per aantal connecties zien
 - netlists waarbij een of meer gates meer dan 5 verbindingen maakt worden weggegooid zonder mee te tellen
 
-
 #### June 10
  
 ## Week 24
@@ -112,6 +111,7 @@ visualisatie gaat vooruit:
  - (print 2) een op het oog optimale print
  - (print 3) de originele print 1, met 4 gates verschoven
 
+- veel gebeurd: visualisatie is weer een stuk beter, code nu wellicht wat rommelig, moet weer verbeterd worden
 #### June 15
  
 #### June 16
