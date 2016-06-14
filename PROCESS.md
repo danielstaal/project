@@ -104,6 +104,7 @@ visualisatie gaat vooruit:
  
 #### June 14
 - op lisa aansluiten 
+- als het goed is doet lisa nu batch jobs om resultaten te verkrijgen
 
 #### June 15
  
