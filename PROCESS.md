@@ -105,6 +105,8 @@ visualisatie gaat vooruit:
 #### June 14
 - op lisa aansluiten 
 - als het goed is doet lisa nu batch jobs om resultaten te verkrijgen
+Huidige visualisatie:
+<img src="https://github.com/danielstaal/project/blob/master/doc/gui5.PNG?raw=true" width="320">
 
 #### June 15
  
