@@ -105,8 +105,12 @@ visualisatie gaat vooruit:
 #### June 14
 - op lisa aansluiten 
 - als het goed is doet lisa nu batch jobs om resultaten te verkrijgen
-Huidige visualisatie:
+- Huidige visualisatie:
 <img src="https://github.com/danielstaal/project/blob/master/doc/gui5.PNG?raw=true" width="320">
+
+- twee nieuwe prints op (18*13) grid:
+ - (print 2) een op het oog optimale print
+ - (print 3) de originele print 1, met 4 gates verschoven
 
 #### June 15
  
