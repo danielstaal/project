@@ -103,7 +103,8 @@ visualisatie gaat vooruit:
 * Met Julian kijken of we die dingen kunnen 3D printen
  
 #### June 14
- 
+- op lisa aansluiten 
+
 #### June 15
  
 #### June 16
