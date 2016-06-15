@@ -115,7 +115,9 @@ visualisatie gaat vooruit:
 
 #### June 15
 - meer resultaten ophalen met lisa
- 
+- grid embed in dezelfde tkinter als de grafiek
+<img src="https://github.com/danielstaal/project/blob/master/doc/gui6.PNG?raw=true" width="320">
+
 #### June 16
  
 #### June 17
