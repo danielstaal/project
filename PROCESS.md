@@ -112,7 +112,9 @@ visualisatie gaat vooruit:
  - (print 3) de originele print 1, met 4 gates verschoven
 
 - veel gebeurd: visualisatie is weer een stuk beter, code nu wellicht wat rommelig, moet weer verbeterd worden
+
 #### June 15
+- meer resultaten ophalen met lisa
  
 #### June 16
  
