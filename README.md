@@ -3,7 +3,7 @@ Daniël Staal<br>
 daniel.staal@hotmail.com<br>
 30/05/2016
 
-![](https://github.com/danielstaal/project/blob/master/doc/figure_1.PNG?raw=true)
+![](https://github.com/danielstaal/project/blob/master/doc/figure_1.jpg?raw=true)
 
 ## Problem
 
