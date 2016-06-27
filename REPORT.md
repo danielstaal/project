@@ -1,9 +1,11 @@
 # Report
 
-<img src="https://github.com/danielstaal/project/blob/master/doc/App.PNG?raw=true" width="320">
+<img src="https://github.com/danielstaal/project/blob/master/doc/App.PNG?raw=true" width="800">
 
 #### Problem description
-The App created in this project is a local computer application, running in a python environment using a module called Tkinter. In the App, results from a database are viewable for three different prints (a 18*13*7 square with 25 gates placed at certain positions). 
+
+
+The App created in this project is a local computer application, running in a python environment using a module called Tkinter. In the App, results from a database are viewable for three different prints (a 18*13*7 square with 25 gates placed at certain positions). In the left window global results from a certain print are displayed. In the right window the user can see an example solution for the amount of connections that are selected in the left window.
 
 
 
