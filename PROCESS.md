@@ -135,7 +135,7 @@ visualisatie gaat vooruit:
 
 #### June 22
 - Een combinatie van cylinders en bollen blijken een model te kunnen geven dat kan worden uitgeprint. Demo (door Daan gemold):
-<img src="https://github.com/danielstaal/project/blob/master/doc/demo.jpg?raw=true" width="480">
+<img src="https://github.com/danielstaal/project/blob/master/doc/demo.jpg?raw=true" width="320">
 
  
 #### June 23
