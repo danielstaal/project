@@ -142,4 +142,5 @@ visualisatie gaat vooruit:
 - python programma geschreven om een paths oplossing gemakkelijk om te zetten in een model wat door mathematica in elkaar wordt gezet
 
 #### June 24
+- een complexer 3d model wordt uitgeprint
  
