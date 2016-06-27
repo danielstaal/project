@@ -1,9 +1,11 @@
 # Project Chips & Circuits
 Daniël Staal<br>
 daniel.staal@hotmail.com<br>
-30/05/2016
+27/06/2016
 
 <img src="https://github.com/danielstaal/project/blob/master/doc/figure_1.png?raw=true" width="1000">
+
+NOTE: To run the program call: python App.py
 
 ## Problem
 
@@ -30,7 +32,3 @@ A*, visualisation (matplotlib), path deletion algorithms, hill climber
 ## Technical problems or limitations
 
 the main problems that might occur can be split into two categories: too high time complexity and no solution is found
-
-## Similar applications
-
-TODO: literature review
