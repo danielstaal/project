@@ -119,18 +119,25 @@ visualisatie gaat vooruit:
 <img src="https://github.com/danielstaal/project/blob/master/doc/gui6.PNG?raw=true" width="480">
 
 #### June 16
+- werken aan visualisatie:
+  - grafiek is nu interactief: de pijltjestoetsen kunnen gebruikt worden, of een bepaald punt in de grafiek kan met de muis geselecteerd worden 
  
 #### June 17
- 
+- resultaten met Lisa ophalen voor de 3 verschillende prints
 
 ## Week 25
 #### June 20
- 
+- beginnen te werken aan het maken van een 3d print
+- dit blijkt redelijk lastig, een .stl file type is nodig, dus er moet een nieuwe visualisatie gemaakt worden, de python visualisatie kan niet zomaar omgezet worden
+
 #### June 21
- 
+- aangezien python niet handig blijkt, overgeschakeld naar mathematica. Hierin even wennen, lijnen kunnen niet worden uitgeprint want oneindig dun
+
 #### June 22
+- Een combinatie van cylinders en bollen blijken een model te kunnen geven dat kan worden uitgeprint.  
  
 #### June 23
+- python programma geschreven om een paths oplossing gemakkelijk om te zetten in een model wat door mathematica in elkaar wordt gezet
 
 #### June 24
  
