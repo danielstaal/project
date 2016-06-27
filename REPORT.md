@@ -2,9 +2,10 @@
 
 
 #### Problem description
-<img src="https://github.com/danielstaal/project/blob/master/doc/App.PNG?raw=true" width="800">
 
 The case is Chips & Circuits. In Chip design, ideally the connections between gates are as short as possible. This project is about finding ways to compute the shortest length of the sum of all the paths in a chip and figuring out why for certain prints (25 gates placed on a 18*13*7 square) it is especially hard or easy to find valid solutions. In the project a user friendly application has been built to show the results from random netlists (a list of gates that have to be connected) in a range of 10 to 50 connections for three different prints.
+
+<img src="https://github.com/danielstaal/project/blob/master/doc/App.PNG?raw=true" width="800">
 
 The App created in this project is a local computer application, running in a python environment using a module called Tkinter. In the left window graphs about average time and lengths from a certain print are displayed. In the right window the user can see an example solution for the amount of connections that is selected in the left window.
 
