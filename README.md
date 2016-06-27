@@ -13,17 +13,17 @@ The case is Chips & Circuits. A number of gates placed inside a print have to be
 
 ## Goals
 
-- use the largest print (18x17x7) and create 50 random gate placements in a print. For every configuration 50 random netlists could be created and the program tries to solve each netlist in each print. 
-- create a program that is user friendly.
+- Use the largest print (18x17x7) and create 50 random gate placements in a print. For every configuration 50 random netlists could be created and the program tries to solve each netlist in each print. 
+- Create a program that is user friendly.
 
 ## Overview
 
-- Program runs in terminal using python (might get updated to web application or into a .exe file)
-- After a solution is found, it is plotted using matplotlib and automatically showed to the user.
+- Program runs in a Tkinter application, launched by calling python App.py
+- Results from a database are showed to the user
 
 ## Data
 
-standard given netlists, prints. Python (libraries)
+Standard given netlists, prints. Python (libraries)
 
 ## Parts of the application
 
