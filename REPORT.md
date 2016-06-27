@@ -1,7 +1,9 @@
 # Report
 
+<img src="https://github.com/danielstaal/project/blob/master/doc/App.PNG?raw=true" width="320">
 
-
+#### Problem description
+The App created in this project is a local computer application, running in a python environment using a module called Tkinter. In the App, results from a database are viewable for three different prints (a 18*13*7 square with 25 gates placed at certain positions). 
 
 
 
