@@ -134,7 +134,9 @@ visualisatie gaat vooruit:
 - aangezien python niet handig blijkt, overgeschakeld naar mathematica. Hierin even wennen, lijnen kunnen niet worden uitgeprint want oneindig dun
 
 #### June 22
-- Een combinatie van cylinders en bollen blijken een model te kunnen geven dat kan worden uitgeprint.  
+- Een combinatie van cylinders en bollen blijken een model te kunnen geven dat kan worden uitgeprint. Demo (door Daan gemold):
+<img src="https://github.com/danielstaal/project/blob/master/doc/demo.jpg?raw=true" width="480">
+
  
 #### June 23
 - python programma geschreven om een paths oplossing gemakkelijk om te zetten in een model wat door mathematica in elkaar wordt gezet
