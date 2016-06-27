@@ -1,10 +1,13 @@
 '''
-Transform path to mathematica input for .stl file
+File to run the Application
 Date: 27/06/2016
 Daniel Staal
 
-Write a path in this file that will be printed in the terminal. This can be inputted in mathematica
-to receive a model in a .stl filetype
+This is the main file of the program. In this App global results and example grids can be viewed
+
+This App runs in a Tkinter environment. This is a python module provides an embedding of
+matplotlib 3D plots, which can even be rotated and examined within Tkinter. Also the graph
+is interactive and listens to mouse events.
 '''
 
 from __future__ import print_function
@@ -15,45 +18,26 @@ import astar3D
 import matplotlib
 matplotlib.use('TkAgg')
 import numpy as np
-
 import time
-
-import numpy.core
-import numpy.core.multiarray
-
-if 0:
-  import datetime
-
 import os.path
-
 from random import randint
 import ast
-
 import visualization
 import csv
 import Print
 import matplotlib.cm as cm
-
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
 # implement the default mpl key bindings
 from matplotlib.backend_bases import key_press_handler
-
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import Position
-
 import sys
 if sys.version_info[0] < 3:
 	import Tkinter as Tk
 else:
 	import tkinter as Tk
-
-
-# red: #804000
-# green: #408000
-# blue: #004080
-# purple: #400080
 
 class App:
 	def __init__(self, master):
@@ -90,8 +74,6 @@ class App:
 		self.showInfoAndGraph()
 
 	def showInfoAndGraph(self):
-		# self.enableShowPaths()
-
 		# replot the graph
 		if self.iteration != 0:
 			self.canvas.get_tk_widget().pack_forget()
@@ -310,14 +292,6 @@ class App:
 		self.showPathsTo.config(state="normal", fg="#1f2e2e", to=maxPathLength, sliderrelief=RAISED)
 		self.showPathsFrom.set(1)
 		self.showPathsTo.set(maxPathLength)
-
-	# def changeTo(self):
-	# 	to = self.showPathsTo.get()
-	# 	from_ = self.showPathsFrom.get()
-	# 	print to
-	# 	print from_
-	# 	if to < from_:
-	# 		self.showPathsTo.set(from_)
 
 	def showGrid(self):
 		plotInfo = self.readData(self.cons)

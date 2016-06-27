@@ -1,5 +1,5 @@
 '''
-Transform path to mathematica input for .stl file
+Transform paths of chip to mathematica input for .stl file
 Date: 27/06/2016
 Daniel Staal
 
