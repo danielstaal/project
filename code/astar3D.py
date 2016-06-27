@@ -4,7 +4,7 @@ Date: 26/05/2016
 Daniel Staal
 
 In this file all the classes are controlled and the final result is written
-to the .csv file. This file is called by chips_exe.py
+to the .csv file. This file is called by chips_exe.py or Test.py
 '''
 
 import math
@@ -21,15 +21,15 @@ import csv
 
 # main function, called by chips_exe.py with the starting variables
 def executeAlgorithm(gridMeasures, netlist, gates, iterations, csvFileName, randomOrNeighbour, reMaking, shortFirst):
-
+    firstIterationResult = []
     for i in range(iterations): 
-        print "iteration: ", i
+        # print "iteration: ", i
         length = gridMeasures[0]
         width = gridMeasures[1]
         height = gridMeasures[2]
 
         # import connections from netlist
-        connections = netlist
+        connections = copy.deepcopy(netlist)
         
         # order the connections short to long
         if shortFirst:
@@ -38,7 +38,7 @@ def executeAlgorithm(gridMeasures, netlist, gates, iterations, csvFileName, rand
         # create the grid
         newGrid = Grid.Grid(length,width,height)
         # put the gates in the grid
-        newGrid.drawGates(connections, 4, 0)
+        newGrid.drawGates([gates], 4, 0)
         # random or neighbour
         newGrid.setRandomOrNeighbour(randomOrNeighbour)
         
@@ -47,11 +47,18 @@ def executeAlgorithm(gridMeasures, netlist, gates, iterations, csvFileName, rand
         
         # make the connections
         paths = []
-        makeAllConnections(connections, newGrid, paths, shortFirst)
+
+        success = True
+        timerCheck = makeAllConnections(connections, newGrid, paths, shortFirst)
+        if timerCheck == "break":
+            reMaking = False
+            success = False
+
         
         # calculating total length of connections
         newTotalLength = calcTotalPathLength(paths)
-        if reMaking == True:
+
+        if reMaking:
             totalLength = 10000
             while newTotalLength < totalLength:
                 # print paths
@@ -65,31 +72,39 @@ def executeAlgorithm(gridMeasures, netlist, gates, iterations, csvFileName, rand
             
         totalTime = time2-time1
         
-        # calculateOptimum(length, width, height, netlists.getNetlist3())
-        
-        fileName = csvFileName + ".csv"
-        
-        if newTotalLength != "break":
-            writeToCSV(newTotalLength, totalTime, paths, fileName)
-        
-        visualization.plotAstar(length, width, height, paths, gates)
+        cr = calculateOptimum(length, width, height, netlist, gates)
+                
+        if newTotalLength != "break" and timerCheck != "break":
+            writeToCSV(newTotalLength, totalTime, paths, cr, csvFileName, i)
+
+        if i == 0:
+            firstIterationResult = [length, width, height, paths, gates]
+    return success
             
 # order the connections from shortest to longest
 def orderConnections(connections):
     distances = []
     for connection in connections:
-        distances.append(Extra.calcDistance(connection[0], connection[1]))
+        distances.append(Extra.calcDistance(connection[0], connection[1], 1))
     indexList = sorted(range(len(distances)), key=lambda k: distances[k])
     copyConnections = []
     for index in indexList:
         copyConnections.append(connections[index])
     return copyConnections
     
-# making connections via the A* algorithm
+# making connections with the A* algorithm
 def makeAllConnections(connections, newGrid, paths, shortFirst):
     extraConnections = []
     countAttemps = 0;
+
+    blockedAtGate = 0
+    blockedNotAtGate = 0
+
+    timer = time.time()
+
     while len(connections) != 0:
+        if (time.time() - timer > 300):
+            return "break"
         for connection in connections:
             countAttemps += 1
             path = []
@@ -97,15 +112,21 @@ def makeAllConnections(connections, newGrid, paths, shortFirst):
             # length of 3 is [x,y,z]
             while len(path) != 3:
                 path = findPath(connection, newGrid, paths)
-                
-                # if returned extra connection
+                # if returned extra connection: [[start, end], block point]
                 if len(path) == 2:
-                    extraConnections.append(path)
+                    extraConnections.append(path[0])
+                    if path[1] == 1:
+                        blockedAtGate += 1
+                    if path[1] > 1:
+                        blockedNotAtGate += 1
+
             paths.append(path)
         connections = copy.deepcopy(extraConnections)
         if shortFirst:
             connections = orderConnections(connections)
         extraConnections = []
+    # print "gate", blockedAtGate
+    # print "notgate", blockedNotAtGate
         
 # function to make a connection between two points using A*
 def findPath(connection, grid, paths):
@@ -132,11 +153,11 @@ def findPath(connection, grid, paths):
         
         # if the path is blocked delete a neighbouring path
         if(tempPath == "blocked"):
-            return blockedExtraConnection(paths, grid, pathData, currentPath[-1])
+            return [blockedExtraConnection(paths, grid, pathData, currentPath[-1]), len(pathData.closedList)]
             
         # if Astar takes too much time, delete a neighbour at the end
         elif(tempPath == "turnaround"):
-            return blockedExtraConnection(paths, grid, pathData, endPos)
+            return [blockedExtraConnection(paths, grid, pathData, endPos), -1]
 
         else:
             currentPath = copy.deepcopy(tempPath);
@@ -206,7 +227,7 @@ def expandOpenList(continuationList, endPos, pathData):
         
         # calculate cost and heuristic
         G = len(possiblePath) - 1
-        H = Extra.calcDistance(possiblePath[-1], endPos)
+        H = Extra.calcDistance(possiblePath[-1], endPos, 1)
         F = G + H
         
         # put path,cost and heuristic in the openList like [[path], F-score]
@@ -227,6 +248,37 @@ def reMakeAllConnections(grid, paths):
         newPaths.append(path)
 
     return newPaths
+
+# def reMakeTwoConnections(grid, paths):
+#     newPaths = []
+
+#     path1 = paths[randint(0, len(paths) - 1)]
+#     path2 = paths[randint(0, len(paths) - 1)]
+
+#     start1 = Position.Position(path1[0][0], path1[1][0], path1[2][0])
+#     end1 = Position.Position(path1[0][-1], path1[1][-1], path1[2][-1])
+#     start2 = Position.Position(path2[0][0], path2[1][0], path2[2][0])
+#     end2 = Position.Position(path2[0][-1], path2[1][-1], path2[2][-1])
+
+#     grid.deletePath(path1)
+#     grid.deletePath(path2)
+
+#     grid.setStartEnd(start1, end1)
+    
+#     path1 = findPath([start1, end1], grid, paths)
+#     if len(path1) != 3:
+#         print "error: remaking failed to find path"
+#     newPaths.append(path1)
+
+#     grid.setStartEnd(start2, end2)
+
+#     path2 = findPath([start2, end2], grid, paths)
+#     if len(path2) != 3:
+#         print "error: remaking failed to find path"
+#     newPaths.append(path2)
+
+#     return newPaths
+
     
 # sum up all the path lengths
 def calcTotalPathLength(paths):
@@ -238,25 +290,27 @@ def calcTotalPathLength(paths):
     return length
 
 # function to calculate an optimum total path length 
-def calculateOptimum(length, width, height, connections):
-    newTotalLength = 0
+def calculateOptimum(length, width, height, connections, gates):
+    totalLength = 0
     for connection in connections:
         # create the grid
         newGrid = Grid.Grid(length,width,height)
         
         # put the gates in the grid
-        newGrid.drawGates(connections, 4, 0)
+        newGrid.drawGates([gates], 4, 0)
         
         path = findPath(connection, newGrid, [])
         
-        newTotalLength += len(path[0])
+        totalLength += len(path[0])
         
-    # print result
-    print "optimum length of paths: ", newTotalLength
+    return totalLength
 
-def writeToCSV(totalLength, time, paths, fileName):
-    with open(fileName, 'a') as csvfile:
+def writeToCSV(totalLength, time, paths, cr, fileName, i):
+    appending = 'a'
+    # if i == 0:
+    #     appending = 'w'
+    with open(fileName, appending) as csvfile:
 
-        csvwriter = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
-        csvwriter.writerow([totalLength] + [time] + [paths])
+        csvwriter = csv.writer(csvfile, delimiter=',', lineterminator='\n')
+        csvwriter.writerow([totalLength] + [time] + [cr] + [paths])
 

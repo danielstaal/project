@@ -56,7 +56,7 @@ if __name__ == "__main__":
 
     netlist = netlists[0]
     gates = netlists[1]
-    
+
     # choose iterations
     iterations = int(raw_input("number of iterations: "))
 

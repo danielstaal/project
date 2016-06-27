@@ -50,21 +50,24 @@ class PathData:
     def getLowestFScore(self, currentPos, endPos, paths, grid):
         
         if len(self.openList) == 0:
-            # print "Connection blocked at connection: ", currentPos.getX(), currentPos.getY(), currentPos.getZ()
-            # print "to: ", endPos.getX(), endPos.getY(), endPos.getZ()
+            # if len(self.closedList) == 2:
+            #     print "Connection blocked at connection: ", currentPos.getX(), currentPos.getY(), currentPos.getZ()
+            #     print "to: ", endPos.getX(), endPos.getY(), endPos.getZ()
+            #     print paths
+
             # print "number of assigned paths: ", len(paths)
             # print paths
-
             return "blocked"
   
-        if(len(self.openList) > 300):
+        if(len(self.closedList) > 500):
+            # print "other side blocked"
             return "turnaround"
   
         else:
             lowestFscore = 10000
             H = 10000
             for possiblePath in self.openList:
-                newH = Extra.calcDistance(possiblePath[0][-1], endPos)
+                newH = Extra.calcDistance(possiblePath[0][-1], endPos, 1)
                 if (possiblePath[1] < lowestFscore) or (possiblePath[1] == lowestFscore and newH < H):
                     lowestFscore = possiblePath[1]
                     H = newH

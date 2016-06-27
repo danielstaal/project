@@ -62,42 +62,18 @@ class Grid:
         y = currentPath[-1].getY()
         z = currentPath[-1].getZ()
         
-        rightx = x + 1
-        if rightx <= self.length-1 and self.grid[rightx][y][z] == 0 and not (pathData.inClosedList(Position.Position(rightx, y, z))):
-            possiblePath = copy.deepcopy(currentPath)
-            possiblePath.append(Position.Position(rightx, y, z))
-            nextPaths.append(possiblePath)
+        options = [[x + 1, y, z], [x - 1, y, z], [x, y + 1, z], [x, y - 1, z], [x, y, z + 1], [x, y, z - 1]]
+        for option in options:
+            x = option[0]
+            y = option[1]
+            z = option[2]
 
-        leftx = x - 1
-        if leftx >= 0 and self.grid[leftx][y][z] == 0 and not (pathData.inClosedList(Position.Position(leftx, y, z))):
-            possiblePath = copy.deepcopy(currentPath)
-            possiblePath.append(Position.Position(leftx, y, z))
-            nextPaths.append(possiblePath)
-
-        upy = y + 1
-        if upy <= self.width-1 and self.grid[x][upy][z] == 0 and not (pathData.inClosedList(Position.Position(x, upy, z))):
-            possiblePath = copy.deepcopy(currentPath)
-            possiblePath.append(Position.Position(x, upy, z))
-            nextPaths.append(possiblePath)
-            
-        downy = y - 1
-        if downy >= 0 and self.grid[x][downy][z] == 0 and not (pathData.inClosedList(Position.Position(x, downy, z))):
-            possiblePath = copy.deepcopy(currentPath)
-            possiblePath.append(Position.Position(x, downy, z))
-            nextPaths.append(possiblePath)
-        
-        upz = z + 1
-        if upz <= self.height-1 and self.grid[x][y][upz] == 0 and not (pathData.inClosedList(Position.Position(x, y, upz))):
-            possiblePath = copy.deepcopy(currentPath)
-            possiblePath.append(Position.Position(x, y, upz))
-            nextPaths.append(possiblePath)
-        
-        downz = z - 1
-        if downz >= 0 and self.grid[x][y][downz] == 0 and not (pathData.inClosedList(Position.Position(x, y, downz))):
-            possiblePath = copy.deepcopy(currentPath)
-            possiblePath.append(Position.Position(x, y, downz))
-            nextPaths.append(possiblePath)
-                    
+            if x <= self.length-1 and y <= self.width-1 and z <= self.height-1 and x >= 0 and y >= 0 and z >= 0 and \
+            self.grid[x][y][z] == 0 and not (pathData.inClosedList(Position.Position(x, y, z))):
+                possiblePath = copy.deepcopy(currentPath)
+                possiblePath.append(Position.Position(x, y, z))
+                nextPaths.append(possiblePath)
+          
         return nextPaths
         
     def drawPath(self, path, closedList):
@@ -140,29 +116,13 @@ class Grid:
         neighbouringPaths = []
         
         # look in all directions
-        rightx = x + 1
-        if rightx <= self.length-1 and self.grid[rightx][y][z] == 2:
-            neighbouringPaths.append(self.searchPath(Position.Position(rightx,y,z), paths))
-        
-        leftx = x - 1
-        if leftx >= 0 and self.grid[leftx][y][z] == 2:
-            neighbouringPaths.append(self.searchPath(Position.Position(leftx,y,z), paths))
-        
-        upy = y + 1
-        if upy <= self.width-1 and self.grid[x][upy][z] == 2:
-            neighbouringPaths.append(self.searchPath(Position.Position(x,upy,z), paths))
-        
-        downy = y - 1
-        if downy >= 0 and self.grid[x][downy][z] == 2:
-            neighbouringPaths.append(self.searchPath(Position.Position(x,downy,z), paths))
-        
-        upz = z + 1
-        if upz <= self.height-1 and self.grid[x][y][upz] == 2:
-            neighbouringPaths.append(self.searchPath(Position.Position(x,y,upz), paths))
-        
-        downz = z - 1
-        if downz >= 0 and self.grid[x][y][downz] == 2:
-            neighbouringPaths.append(self.searchPath(Position.Position(x,y,downz), paths))
+        options = [[x + 1, y, z], [x - 1, y, z], [x, y + 1, z], [x, y - 1, z], [x, y, z + 1], [x, y, z - 1]]
+        for option in options:
+            x = option[0]
+            y = option[1]
+            z = option[2]
+            if x <= self.length-1 and y <= self.width-1 and z <= self.height-1 and x >= 0 and y >= 0 and z >= 0 and self.grid[x][y][z] == 2:
+                neighbouringPaths.append(self.searchPath(Position.Position(x,y,z), paths))
         
         if len(neighbouringPaths) == 0:
             return None
@@ -201,4 +161,3 @@ class Grid:
             self.random = True
         else:
             self.random = False
-        

@@ -1,0 +1,7 @@
+#PBS -lnodes=2
+#PBS -lwalltime=200:00
+echo start of job
+cd 
+cd code
+python lisa.py 1 49
+echo end of job
