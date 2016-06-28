@@ -50,15 +50,15 @@ In this additional section, results will be shown:
 
 Print 1 (original print):
 
-<img src="https://github.com/danielstaal/project/blob/master/doc/Print1.PNG?raw=true" width="300">
+<img src="https://github.com/danielstaal/project/blob/master/doc/Print1.PNG?raw=true" width="500">
 
 Print 2 (ideal print):
 
-<img src="https://github.com/danielstaal/project/blob/master/doc/Print2.PNG?raw=true" width="300">
+<img src="https://github.com/danielstaal/project/blob/master/doc/Print2.PNG?raw=true" width="500">
 
 Print 3 (original print with 4 small hand picked changes in gate positions): 
 
-<img src="https://github.com/danielstaal/project/blob/master/doc/Print3.PNG?raw=true" width="300">
+<img src="https://github.com/danielstaal/project/blob/master/doc/Print3.PNG?raw=true" width="500">
 
 
 
