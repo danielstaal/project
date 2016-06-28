@@ -35,13 +35,13 @@ In this extra section results will be shown:
 <img src="https://github.com/danielstaal/project/blob/master/doc/figure_1.png?raw=true" width="1000">
 
 48 Connections on the original print, showing only the longest paths:
-<img src="https://github.com/danielstaal/project/blob/master/doc/longPaths.PNG?raw=true" width="300">
+<img src="https://github.com/danielstaal/project/blob/master/doc/LongPaths.PNG?raw=true" width="300">
 
 10 Connections on the original print:
-<img src="https://github.com/danielstaal/project/blob/master/doc/10Con.PNG?raw=true" width="300">
+<img src="https://github.com/danielstaal/project/blob/master/doc/10con.PNG?raw=true" width="300">
 
 50 Connections on an ideal print(print 2):
-<img src="https://github.com/danielstaal/project/blob/master/doc/50Con.PNG?raw=true" width="300">
+<img src="https://github.com/danielstaal/project/blob/master/doc/50con.PNG?raw=true" width="300">
 
 
 
