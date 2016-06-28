@@ -274,6 +274,9 @@ class App:
 	def setupButtons(self):
 		self.button = Button(self.buttonFrame, text="QUIT", fg="red", command=lambda: self.quit())
 		self.button.pack(side=RIGHT)
+		self.name = StringVar()
+		Label(self.buttonFrame, textvariable=self.name, pady=10, font=("Helvetica", 12)).pack(side=RIGHT)
+		self.name.set("An Application By Daniel Staal:    daniel.staal@uva.nl    ")
 
 	def setupPathSelection(self):
 		self.showPathsFrom = Scale(self.buttonFrame, sliderrelief=SUNKEN, state="disabled", fg="#c2d6d6", label="Paths from: ", troughcolor="white", from_=1, to=2, orient=HORIZONTAL, length=90)
