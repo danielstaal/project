@@ -7,9 +7,15 @@ The case is Chips & Circuits. In Chip design, ideally the connections between ga
 
 <img src="https://github.com/danielstaal/project/blob/master/doc/App.PNG?raw=true" width="800">
 
-The App created in this project is a local computer application, running in a python environment using a module called Tkinter. In the left window graphs about average time and lengths from a certain print are displayed. In the right window the user can see an example solution for the amount of connections that is selected in the left window.
+The App created in this project is a local computer application, running in a python environment using a canvas module called Tkinter. In the left window, graphs about average time and lengths from a certain print are displayed. In the right window, the user can see an example solution for the amount of connections that is selected in the left window.
 
 #### Technical Design
+The core of the program to find a solution given a netlist and a print is in the file called Astar3D.py. This file receives the setup of this particular problem an returns a solution and the computation time that was needed to find this solution. This program is used to build up a database of results using different prints and randomly generated netlists. In the application information from this database can be examined. In the application no real time results are generated but rather taken from this database. Now a more detailed description of the two separate parts will be given.
+
+##### Finding a single solution
+The algorithm to find a valid solution to connect all the connections from in netlist in a particular print consists of several features. To find the shortest path from A to B, the A* algorithm is being used. 
+
+##### The application
 
 
 
