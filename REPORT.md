@@ -16,7 +16,7 @@ The core of the program to find a solution given a netlist and a print is in the
 The algorithm to find a valid solution to connect all the connections from in netlist in a particular print consists of several features. To find the shortest path from A to B in the 18x13x7 grid, the A-star algorithm is being used, and is allowed to move in every direction horizontally of vertically. If the size of the netlist is large enough, chances are that at some point a path from A to B cannot be found, because A-star is blocked in all directions. Whenever this occurs, one of the paths that add to the blockade is removed entirely from the grid. This process repeats until the original path can be finished. I call this process neighbour deletion. Lastly, after a valid solution is found, a simple hill climber is used. The hill climber individually removes each path and immediately remakes it. By doing this, space that can be arisen during neighbour deletion, is used. This process repeats until the total path length did not change after all paths have been remade. 
 
 ##### The application
-In the application two windows can be viewed, and additional information for the selected amount of connections is shown. 
+In the application two windows can be viewed, and additional information for the selected amount of connections is shown. The successrate is computed by taking the percentage of randomly generated netlists that can be solved for this number of connections. The optimality score is computed by taking the average of dividing the theoretical lowest total path length for a netlist by the total length that is found. 
 
 
 
