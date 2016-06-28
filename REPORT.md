@@ -29,7 +29,7 @@ The decision to create a single screen to be able to view a global graph of the 
 #### Results
 In this additional section, results will be shown:
 
-##### Example grid solutions
+##### Example grid solutions (screenshots from the application)
 44 Connections on the original print:
 
 <img src="https://github.com/danielstaal/project/blob/master/doc/figure_1.png?raw=true" width="1000">
@@ -46,7 +46,7 @@ In this additional section, results will be shown:
 
 <img src="https://github.com/danielstaal/project/blob/master/doc/50con.PNG?raw=true" width="300">
 
-##### Overall print results
+##### Overall print results (screenshots from the application)
 
 Print 1 (original print):
 
@@ -60,7 +60,7 @@ Print 3 (original print with 4 small hand picked changes in gate positions):
 
 <img src="https://github.com/danielstaal/project/blob/master/doc/Print3.PNG?raw=true" width="500">
 
-
+##### Successrates
 
 
 
