@@ -27,7 +27,7 @@ The main challenge of this project was to create a user friendly application to 
 The decision to create a single screen to be able to view a global graph of the results and a single example seems to be a good decision. This reduces the complexity of the application by not having to switch screens or close any screens while examining the results. The decision to reduce the application from a solver to an application that just shows database earlier results from a database could be discussed. The option to enable the user to view live computation of the algorithm might stimulate the active experience of the user and provide a more lively feel to the program. However when computing a netlist larger than 20 connections, the user might have to wait a few minutes for a solution which might be an annoying experience. This is why I chose to limit the application to use database results. In the future, the application could be improved by collecting a larger database to give more value to the results.
 
 #### Results
-In this extra section results will be shown:
+In this additional section, results will be shown:
 
 ##### Example grid solutions
 44 Connections on the original print:
@@ -35,12 +35,15 @@ In this extra section results will be shown:
 <img src="https://github.com/danielstaal/project/blob/master/doc/figure_1.png?raw=true" width="1000">
 
 48 Connections on the original print, showing only the longest paths:
+
 <img src="https://github.com/danielstaal/project/blob/master/doc/longPaths.PNG?raw=true" width="500">
 
 10 Connections on the original print:
+
 <img src="https://github.com/danielstaal/project/blob/master/doc/10con.PNG?raw=true" width="500">
 
 50 Connections on an ideal print(print 2):
+
 <img src="https://github.com/danielstaal/project/blob/master/doc/50con.PNG?raw=true" width="500">
 
 
