@@ -34,17 +34,31 @@ In this additional section, results will be shown:
 
 <img src="https://github.com/danielstaal/project/blob/master/doc/figure_1.png?raw=true" width="1000">
 
-48 Connections on the original print, showing only the longest paths:
+48 Connections on the original print, showing only the 6 longest paths:
 
-<img src="https://github.com/danielstaal/project/blob/master/doc/longPaths.PNG?raw=true" width="500">
+<img src="https://github.com/danielstaal/project/blob/master/doc/longPaths.PNG?raw=true" width="300">
 
 10 Connections on the original print:
 
-<img src="https://github.com/danielstaal/project/blob/master/doc/10con.PNG?raw=true" width="500">
+<img src="https://github.com/danielstaal/project/blob/master/doc/10con.PNG?raw=true" width="300">
 
 50 Connections on an ideal print(print 2):
 
-<img src="https://github.com/danielstaal/project/blob/master/doc/50con.PNG?raw=true" width="500">
+<img src="https://github.com/danielstaal/project/blob/master/doc/50con.PNG?raw=true" width="300">
+
+##### Overall print results
+
+Print 1 (original print):
+
+<img src="https://github.com/danielstaal/project/blob/master/doc/Print1.PNG?raw=true" width="300">
+
+Print 2 (ideal print):
+
+<img src="https://github.com/danielstaal/project/blob/master/doc/Print2.PNG?raw=true" width="300">
+
+Print 3 (original print with 4 small hand picked changes in gate positions): 
+
+<img src="https://github.com/danielstaal/project/blob/master/doc/Print3.PNG?raw=true" width="300">
 
 
 
