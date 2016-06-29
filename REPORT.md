@@ -60,8 +60,18 @@ Print 3 (original print with 4 small hand picked changes in gate positions):
 
 <img src="https://github.com/danielstaal/project/blob/master/doc/Print3.PNG?raw=true" width="500">
 
-##### Successrates
+##### Success Rates
 
+Success Rate Print 1:
 
+<img src="https://github.com/danielstaal/project/blob/master/doc/suc1.PNG?raw=true" width="500">
+
+Success Rate Print 2:
+
+<img src="https://github.com/danielstaal/project/blob/master/doc/suc1.PNG?raw=true" width="500">
+
+Success Rate Print 3:
+
+<img src="https://github.com/danielstaal/project/blob/master/doc/suc1.PNG?raw=true" width="500">
 
 
