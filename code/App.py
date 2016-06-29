@@ -42,6 +42,7 @@ else:
 class App:
 	def __init__(self, master):
 
+
 		# to keep track of if some action has been done
 		self.iteration = 0
 		self.pathsSet = 0
@@ -64,6 +65,9 @@ class App:
 		self.showInfoAndGraph()
 
 		self.printvar.trace("w", lambda x, y, z: self.printChanged())
+
+		# self.plotSuccessRates()
+
 
 	def printChanged(self):
 		# ugly code to make sure the path bounds are correct
@@ -392,6 +396,29 @@ class App:
 
 	def returnKey(self, event):
 		self.showGrid()		
+
+	def plotSuccessRates(self):
+		successRates = []
+		x = []
+		for i in range(10, 51):
+			x.append(i)
+			fileName = "print" + "2" + "\\" + "2" + "_" + str(i) + ".csv"
+
+			# read one file
+			with open(fileName, 'rb') as csvfile:
+				reader = csv.reader(csvfile, delimiter=',')
+				counter = 0
+				for row in reader:
+					counter += 1
+				successRates.append(counter/20.0)
+
+		plt.plot(x, successRates)
+		plt.title('Print 2 Success Rate')
+		plt.xlabel('Amount of Connections')
+		plt.ylabel('Success Rate')
+		plt.ylim(0, 1.05)
+		plt.show()
+
 
 if __name__ == "__main__":
 
