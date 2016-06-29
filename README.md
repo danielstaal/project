@@ -31,4 +31,4 @@ A*, visualisation (matplotlib), path deletion algorithms, hill climber
 
 ## Technical problems or limitations
 
-the main problems that might occur can be split into two categories: too high time complexity and no solution is found
+The main problems that might occur can be split into two categories: too high time complexity and no solution is found
