@@ -68,10 +68,10 @@ Success Rate Print 1:
 
 Success Rate Print 2:
 
-<img src="https://github.com/danielstaal/project/blob/master/doc/suc1.PNG?raw=true" width="500">
+<img src="https://github.com/danielstaal/project/blob/master/doc/suc2.PNG?raw=true" width="500">
 
 Success Rate Print 3:
 
-<img src="https://github.com/danielstaal/project/blob/master/doc/suc1.PNG?raw=true" width="500">
+<img src="https://github.com/danielstaal/project/blob/master/doc/suc3.PNG?raw=true" width="500">
 
 
