@@ -5,7 +5,7 @@ daniel.staal@hotmail.com<br>
 
 <img src="https://github.com/danielstaal/project/blob/master/doc/figure_1.png?raw=true" width="1000">
 
-NOTE: To run the program call: python App.py
+##### NOTE: To run the program call: python App.py in the code folder
 
 ## Problem
 
