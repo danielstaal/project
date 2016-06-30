@@ -62,17 +62,8 @@ Print 3 (original print with 4 small hand picked changes in gate positions):
 
 ##### Success Rates
 
-Success Rate Print 1:
+<img src="https://github.com/danielstaal/project/blob/master/doc/suc.PNG?raw=true" width="500">
 
-<img src="https://github.com/danielstaal/project/blob/master/doc/suc1.PNG?raw=true" width="500">
-
-Success Rate Print 2:
-
-<img src="https://github.com/danielstaal/project/blob/master/doc/suc2.PNG?raw=true" width="500">
-
-Success Rate Print 3:
-
-<img src="https://github.com/danielstaal/project/blob/master/doc/suc3.PNG?raw=true" width="500">
 
 ##### Conclusion
 To be able to draw conclusions from these results, more data would be necessary. This project however was a practical project, rather than a research project. In the future it could be extended to a research project to try to find significant changes in computation time, total path length and successrate when using different prints or making slight improvements on original prints. Evolutionary learning methods could be used to try to find an optimal print, by making slight changes every generation. Furthermore the solving algorithm might be improvable to find shorter total path lengths. This was not the main goal of this project, but rather to create a clear visualization to examine the results and compare performance of different prints, still the performance of the solver seems acceptable. To sum up: in the future it might be interesting to scientifically examine the results shown in the application.
