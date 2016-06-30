@@ -398,11 +398,15 @@ class App:
 		self.showGrid()		
 
 	def plotSuccessRates(self):
+		
+		f = plt.figure()
+		ax = f.add_subplot(111)
+
 		successRates = []
 		x = []
-		for i in range(10, 51):
+		for i in range(10, 49):
 			x.append(i)
-			fileName = "print" + "2" + "\\" + "2" + "_" + str(i) + ".csv"
+			fileName = "print" + "1" + "\\" + "1" + "_" + str(i) + ".csv"
 
 			# read one file
 			with open(fileName, 'rb') as csvfile:
@@ -412,8 +416,46 @@ class App:
 					counter += 1
 				successRates.append(counter/20.0)
 
-		plt.plot(x, successRates)
-		plt.title('Print 2 Success Rate')
+		successRates2 = []
+		x2 = []
+		for i in range(10, 51):
+			x2.append(i)
+			fileName = "print" + "2" + "\\" + "2" + "_" + str(i) + ".csv"
+
+			# read one file
+			with open(fileName, 'rb') as csvfile:
+				reader = csv.reader(csvfile, delimiter=',')
+				counter = 0
+				for row in reader:
+					counter += 1
+				successRates2.append(counter/20.0)				
+
+		successRates3 = []
+		x3 = []
+		for i in range(10, 50):
+			x3.append(i)
+			fileName = "print" + "3" + "\\" + "3" + "_" + str(i) + ".csv"
+
+			# read one file
+			with open(fileName, 'rb') as csvfile:
+				reader = csv.reader(csvfile, delimiter=',')
+				counter = 0
+				for row in reader:
+					counter += 1
+				successRates3.append(counter/10.0)
+
+		a, = ax.plot(x, successRates)
+		b, = ax.plot(x2, successRates2)
+		c, = ax.plot(x3, successRates3)
+
+		plt.legend((a, b, c),
+		   ('Print 1', 'Print 2', 'Print 3'),
+		   scatterpoints=1,
+		   loc='bottom left',
+		   ncol=1,
+		   fontsize=8)
+
+		plt.title('Success Rates')
 		plt.xlabel('Amount of Connections')
 		plt.ylabel('Success Rate')
 		plt.ylim(0, 1.05)
