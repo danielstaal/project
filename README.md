@@ -25,10 +25,10 @@ The case is Chips & Circuits. A number of gates placed inside a print have to be
 
 Standard given netlists, prints. Python (libraries)
 
-## Parts of the application
+## Parts of the solver
 
 A*, visualisation (matplotlib), path deletion algorithms, hill climber
 
-## Technical problems or limitations
+## Technical problems or limitations of the solver
 
 The main problems that might occur can be split into two categories: too high time complexity and no solution is found
