@@ -1,7 +1,7 @@
 # Project Chips & Circuits
 Daniël Staal<br>
 daniel.staal@hotmail.com<br>
-27/06/2016
+30/06/2016
 
 <img src="https://github.com/danielstaal/project/blob/master/doc/figure_1.png?raw=true" width="1000">
 
