@@ -32,3 +32,8 @@ A*, visualisation (matplotlib), path deletion algorithms, hill climber
 ## Technical problems or limitations of the solver
 
 The main problems that might occur can be split into two categories: too high time complexity and no solution is found
+
+## Copyright License
+
+All the rights to the content of this repository belong to Daniël Staal. Any distribution without permission is prohibited and behold a violation of UvA law 46 paragraph 9. 
+
